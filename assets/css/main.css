@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #4d648d !important;
 		}
 
 	strong, b {
@@ -236,6 +236,133 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/* main games */
+.game-description {
+	line-height: 1.6;
+}
+
+.game-description h2, .game-description h3 {
+	color: #2c3e50;
+	margin-top: 20px;
+}
+
+.features-list, .tech-stack{
+	line-height: 1.5;
+	font-size: 0.7em;
+	padding-left: 20px;
+}
+
+.job, .job{
+	line-height: 1.5;
+	font-size: 0.9em;
+	padding-left: 20px;
+}
+
+.features-list li, .tech-stack li {
+	line-height: 1.4;
+	margin-bottom: 1px;
+}
+
+.note {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f8f9fa;
+	border-left: 4px solid #3498db;
+}
+
+.collapsible-section {
+	margin: 15px 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	background-color: #eff4f6;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.section-header:hover {
+	background-color: #d0e1f9;
+}
+
+.section-header h5 {
+	margin: 0;
+}
+
+.toggle-arrow {
+	font-size: 16px;
+	transition: transform 0.3s;
+}
+
+.section-content {
+	padding: 0 15px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.section-content.expanded {
+	padding: 15px;
+	max-height: 2000px; /* Достаточно большое значение для анимации */
+}
+
+.section-header.expanded .toggle-arrow {
+	transform: rotate(180deg);
+}
+
+.job-description {
+	font-family: Arial, sans-serif;
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+}
+
+.job-description h3 {
+	color: #2c3e50;
+	border-bottom: 2px solid #d0e1f9;
+	padding-bottom: 10px;
+}
+
+.responsibilities {
+	font-size: 0.9em;
+	padding-left: 20px;
+}
+
+.responsibilities li {
+	margin-bottom: 8px;
+	line-height: 1.5;
+}
+
+.skill-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 10px 0;
+}
+
+.skill-tag {
+	background-color: #4d648d;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+
+.highlight {
+	background-color: #d0e1f9;
+	padding: 10px;
+	border-left: 3px solid #4d648d;
+	font-weight: bold;
+}
 /* Row */
 
 	.row {
@@ -1785,7 +1912,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #283655;
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1975,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #283655;
 		}
 
 	select {
@@ -1953,7 +2080,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #283655;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2402,7 +2529,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #283655;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2745,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #283655;
 			color: #ffffff !important;
 		}
 
@@ -2626,14 +2753,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				background-color: #283655;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #39c29d;
+				background-color: #283655;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2700,7 +2827,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		background: #283655;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2720,15 +2847,15 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #ffffff;
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #ffffff;
 		}
 
 			#header a:hover {
-				color: #ffffff !important;
+				color: #d0e1f9 !important;
 			}
 
 		#header > header {
@@ -2736,22 +2863,22 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 3em;
+			padding: 1em;
 		}
 
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
-				width: 8em;
+				width: 7em;
 			}
 
 			#header > header h1 {
-				font-size: 1.75em;
+				font-size: 1.45em;
 				margin: 0;
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #ffffff;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2899,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #ffffff;
 				}
 
 		#header > nav {
@@ -2789,7 +2916,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #4d648d;
 					display: block;
 					padding: 0;
 				}
@@ -2807,8 +2934,8 @@ input, select, textarea {
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
-							color: #4acaa8 !important;
+							background: #d0e1f9;
+							color: #1e1f26 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2825,11 +2952,11 @@ input, select, textarea {
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px #ffffff;
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 1em 0 4em 0;
 		}
 
 		#main > section:first-child {
@@ -3076,7 +3203,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #283655;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;

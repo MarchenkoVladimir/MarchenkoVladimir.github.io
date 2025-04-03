@@ -155,5 +155,26 @@
 
 			}
 		});
+	document.addEventListener('DOMContentLoaded', function() {
+		const sectionHeaders = document.querySelectorAll('.section-header');
 
+		sectionHeaders.forEach(header => {
+			header.addEventListener('click', function() {
+				const section = this.closest('.collapsible-section');
+				const content = section.querySelector('.section-content');
+				const arrow = section.querySelector('.toggle-arrow');
+
+				content.classList.toggle('expanded');
+				this.classList.toggle('expanded');
+
+				// Если контент развернут, перемещаем стрелку вниз
+				if (content.classList.contains('expanded')) {
+					content.appendChild(arrow);
+				} else {
+					// Если контент свернут, возвращаем стрелку в заголовок
+					this.appendChild(arrow);
+				}
+			});
+		});
+	});
 })(jQuery);
